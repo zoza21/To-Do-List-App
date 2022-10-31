@@ -1,0 +1,21 @@
+#listing/templates/listings/listings.html
+
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+
+        <h1>Here are my listings!</h1>
+        <p>Album listings for bands are:</p>
+        <ul>
+    			{% for listing in listings %}
+    				<li>{{ listing.tital|upper }}</li>
+    			{% endfor %}
+    	</ul>
+
+{% endblock %}
+
+
+<!-- % are template tags. for statement same as python
+without colon. a for template tag must have a closing endfor tag later on
+can use | to apply formatting>

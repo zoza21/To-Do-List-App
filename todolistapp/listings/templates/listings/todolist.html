@@ -1,0 +1,25 @@
+
+
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+
+<h2>Add Item Here</h2>
+
+
+<form action="" method="post" novalidate>
+{% csrf_token %}
+{{ form.as_p }}
+
+<div class="button"><input type="submit" value="Add Item"></div>
+</form>
+<a href="{% url 'showlist' %}">Show list</a>
+
+    
+{% endblock %}
+
+
+<!-- % are template tags. for statement same as python
+without colon. a for template tag must have a closing endfor tag later on
+can use | to apply formatting>

@@ -1,0 +1,16 @@
+
+{% load static %}
+
+<html>
+    <head><title>Merchex</title></head>
+    <link rel="stylesheet" href="{% static 'listings/styles.css' %}" />
+    <body>
+	
+        {% block content %}
+       
+        {% endblock %}
+
+    </body>
+</html>
+
+<!-- the static means django should look inside special static directory we created earlier and find the style we created>

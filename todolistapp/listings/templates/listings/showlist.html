@@ -1,0 +1,27 @@
+{% extends 'listings/base.html' %}
+
+{% block content %}
+
+<div>
+<h2>To Do List</h2>
+	
+	{% for x in form %}
+		<p style="color:darkblue;"> Item: {{ x.item }}</p> 
+		<p style="color:darkblue;">Details: {{ x.details }} </p>
+		
+		<p><a style="color:white;" href="{% url 'deleteitem' x.id %}">Delete?</a></p>
+		
+	{% endfor %}
+	
+	<a style="padding-bottom:20px;" href="{% url 'todolist' %}">Add new item</a>
+	
+
+</div>
+
+{% endblock %}
+
+
+<!-- % are template tags. for statement same as python
+without colon. a for template tag must have a closing endfor tag later on
+can use | to apply formatting><h2>The item is {{ form.item }}</h2>
+<p>The details are {{ form.details }}</p><a href="{% url 'deleteitem'%}">Delete Item</a><p>Form Item: {{ x.item }}</p>

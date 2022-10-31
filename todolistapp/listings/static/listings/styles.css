@@ -1,0 +1,68 @@
+
+
+body {
+	font-family: verdana;
+	color: white;
+}
+
+
+h2 {
+	font-family: Tahoma, Verdana, sans-serif;
+	color: darkblue;
+	text-decoration-line: underline;
+	text-decoration-line: darkblue;
+	margin: 10px;
+}
+
+
+
+.item
+{
+	width: 30%;
+	padding: 10px 10px;
+	border: 1px solid white;
+	text-align: left;
+	margin: 20px;
+}
+
+.details
+{
+	width: 50%;
+	height: 10%;
+	border: 1px solid white;
+	margin: 20px;
+	vertical-align: text-top;
+	text-align: left;
+}
+
+input[type=submit] {
+	padding: 10px 10px;
+	background-color: darkblue;
+	color: white;
+	border-radius: 15px;
+	
+}
+
+.button {
+	margin: 20px;
+	background-color: white;
+}
+
+label {
+	color: darkblue;
+	display: flex;
+	justify-content: left;
+	justify-items: center;
+	margin: 10px;
+	height: 20px;		
+	
+}
+
+.addnew { 
+	margin: 50px;
+	padding: 60px;
+}
+
+p {
+	color: pink;
+}
