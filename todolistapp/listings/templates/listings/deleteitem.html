@@ -1,11 +1,8 @@
-#listing/templates/listings/hello.html
+
 
 {% extends 'listings/base.html' %}
 
-
 {% block content %}
-
-
 
 <h1>Item to delete</h1>
 
@@ -19,13 +16,4 @@
 	
 	<a href="{% url 'showlist' %}">Back to list</a>
 
-
-
-
 {% endblock %}
-
-
-<!-- % are template tags. for statement same as python
-without colon. a for template tag must have a closing endfor tag later on
-can use | to apply formatting><h2>The item is {{ form.item }}</h2>
-<p>The details are {{ form.details }}</p>
