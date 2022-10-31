@@ -13,15 +13,8 @@
 		
 	{% endfor %}
 	
-	<a style="padding-bottom:20px;" href="{% url 'todolist' %}">Add new item</a>
-	
-
+	<a style="padding-bottom:20px;" href="{% url 'todolist' %}">Add new item</a>	
 </div>
 
 {% endblock %}
 
-
-<!-- % are template tags. for statement same as python
-without colon. a for template tag must have a closing endfor tag later on
-can use | to apply formatting><h2>The item is {{ form.item }}</h2>
-<p>The details are {{ form.details }}</p><a href="{% url 'deleteitem'%}">Delete Item</a><p>Form Item: {{ x.item }}</p>
